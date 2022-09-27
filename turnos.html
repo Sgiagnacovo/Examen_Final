@@ -37,23 +37,10 @@
     <h1>Direccion: Moreno 31 Hospital (Higa) San Felipe, San Nicolás de los Arroyos, Buenos Aires</h1> 
 </html>
 <body>
-    <script>let meses=[enero, febrero, marzo, abril, mayo, junio, julio, agosto, septiembre, octubre, noviembre,diciembre];
-
-const añoActual= fecha.getFullYear();
-const mesActual= fecha.getMonth();
-const hoy= fecha.getDate();
 
 
 
-
-
-
-var añoCalendario= document.getElementsByClassName("añocalendario");
-var mesCalendario= document.getElementsByClassName("mescalendario")
-
-
-
-    </script>
+  
     <h1 class="meses">septiembre</h1><h1>del</h1><h1 class="añocalendario">2022</h1>
    <div class="turnitos">
 <ol>
@@ -69,10 +56,10 @@ var mesCalendario= document.getElementsByClassName("mescalendario")
     
     
     <li class="primerdia"><p> 1</p> <ul>
-        <li><p class="reserv" >Horario: 7 hs   <input  type="button" value="reservar" >  </p></li>
-        <li><p class="reserv"  >Horario 7:30 hs   <input type="button" value="reservar"> </p></li>
-        <li><p  class="reserv" >Horario 8 hs  <input type="button" value="reservar">  </p></li>
-        <li><p class="reserv" >Horario 8:30 hs   <input type="button" value="reservar"> </p></li>
+        <li><p class="reserv" >Horario: 7 hs   <input class="reservado" type="button" value="reservar" >  </p></li>
+        <li><p class="reserv"  >Horario 7:30 hs   <input class="reservado" type="button" value="reservar"> </p></li>
+        <li><p  class="reserv" >Horario 8 hs  <input class="reservado" type="button" value="reservar">  </p></li>
+        <li><p class="reserv" >Horario 8:30 hs   <input class="reservado" type="button" value="reservar"> </p></li>
     </ul></li>
 <li><a href=""> 2</a></li>
 <li><a href=""> 3</a></li>
@@ -108,7 +95,6 @@ var mesCalendario= document.getElementsByClassName("mescalendario")
 
 
 
-
+<script src="turnos.js"></script>
 
 </body>
-<script src="popups.js"></script>

@@ -12,15 +12,4 @@ close.addEventListener('click', () => {
 
 
 
-const button = document.querySelectorAll(".reserv input");
-
-button.addEventListener("click", function(e){ 
-          prueba(e.target.parentNode.parentNode);
-      });
-
   
-  
-  function prueba(p){
-      // console.log(p);
-      p.classList.toggle("seleccionado");
-  }
