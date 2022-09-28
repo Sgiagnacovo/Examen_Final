@@ -4,9 +4,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HIGA</title>
     <link rel="stylesheet" href="style.css">
 </head>
+<script type="text/javascript">
+    var areYouReallySure = false;
+    function areYouSure() {
+        if(allowPrompt){
+            if (!areYouReallySure && true) {
+                areYouReallySure = true;
+                var confMessage = "***************************************nn E S P E R A !!! nnAntes de abandonar nuestra web, síguenos en nuestras redes sociales como Facebook, Twitter o Instagram.nnnYA PUEDES HACER CLIC EN EL BOTÓN CANCELAR SI QUIERES...nn***************************************";
+                return confMessage;
+            }
+        }else{
+            allowPrompt = true;
+        }
+    }
+    
+    var allowPrompt = true;
+    window.confirm = areYouSure;
+  
+   
+    var edad=prompt('ingrese su edad');
+    console.log(edad);
+    
+    
+    if (edad >= 18) {
+        alert("Puedes entrar, eres mayor de edad.");
+    } else {
+        window.confirm('"entras bajo tu propia responsabilidad?.');
+    }
+
+   
+    
+    </script>
     <!--Redes Sociales-->
  <main> 
     <div class="menu"><img src="./imagen/laboratorio.png" alt="">
@@ -87,7 +118,7 @@ El 15 de marzo de 1995, fallece en el Hospital Carlos Saúl Facundo Menem, hijo 
 <!-- necesitas ayuda -->
 </body>
 <aside class="helpp"> 
-    <button id="open"><img src="./imagen/whatsapp.svg" width="20px" height="20px" alt=""> necesitas ayuda
+    <button id="open"><img src="./imagen/whatsapp.svg" width="20px" height="20px" alt=""> ¿Necesitas ayuda?...
   </button>
   <div id="modal_container" class="modal-container">
     <div class="modal">

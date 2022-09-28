@@ -1,6 +1,8 @@
-*{text-decoration: none;}
+*{text-decoration: none;
+}
 /* *********************MARGENES REDUCIDOS*********************** */
 body {
+    background-color: honeydew;
 margin-left: 100px;
 margin-right:  100px;
 padding: 0;
@@ -179,6 +181,7 @@ transition: 600ms;
     
 
 /* ********************TURNITOS CALENDARIO**************** */
+.turnitos{margin-bottom: 500px;}
 .turnitos	ol{list-style: none;
     display: grid; grid-template-columns: repeat(7,  1fr);}
 .turnitos li{border: 1px solid black}
